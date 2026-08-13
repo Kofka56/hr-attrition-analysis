@@ -157,15 +157,15 @@ Track attendance, lateness, engagement, and satisfaction metrics as potential in
 
 ### Overview
 
-![Dashboard Overview](images/dashboard_overview.png)
+<img src="dashboard_overview.png" width="1000">
 
 ### Workforce
 
-![Dashboard Workforce](images/dashboard_workforce.png)
+<img src="dashboard_workforce.png" width="1000">
 
 ### Operational
 
-![Dashboard Operational](images/dashboard_operational.png)
+<img src="dashboard_operational.png" width="1000">
 
 ---
 
