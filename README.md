@@ -36,7 +36,7 @@ The goal is to identify key drivers of attrition and demonstrate how HR data can
 
 ## Tools Used
 
-- **MySQL** — data storage and SQL querying
+- **DBeaver** — SQL querying and data exploration
 - **SQL** — attrition rate calculations and business question analysis
 - **Power BI** — dashboard development and visualization
 - **DAX** — KPI and attrition rate calculations
