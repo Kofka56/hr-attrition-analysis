@@ -193,6 +193,8 @@ Track attendance, lateness, engagement, and satisfaction metrics as potential in
 - Conditional logic (`CASE WHEN`)
 - Date calculations (`DATEDIFF`)
 - Data transformation
+- HR metric calculation
+- Workforce segmentation and analysis
 - Business-focused analytical queries
 
 ### Power BI
