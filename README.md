@@ -4,9 +4,7 @@
 
 This project analyzes employee attrition patterns using SQL for data aggregation and Power BI for visualization.
 
-The analysis explores how department, tenure, performance, satisfaction, salary, recruitment source, management, and attendance relate to employee turnover.
-
-The goal is to identify key drivers of attrition and demonstrate how HR data can support evidence-based workforce decisions.
+The analysis explores how department, tenure, performance, satisfaction, salary, recruitment source, management, and attendance relate to employee turnover. The goal is not only to identify statistical relationships, but also to demonstrate how HR domain expertise can improve the interpretation of workforce data and prevent misleading conclusions.
 
 ---
 
@@ -46,62 +44,51 @@ The goal is to identify key drivers of attrition and demonstrate how HR data can
 
 ## Approach
 
-Attrition rate and related metrics were calculated directly in SQL for each business question, including:
+Attrition metrics were calculated directly in SQL for each business question. Results were then visualized in Power BI through a three-page dashboard designed to answer three key questions:
 
-- Overall attrition rate
-- Attrition by department
-- Attrition by position
-- Attrition by tenure group
-- Attrition by performance score
-- Attrition by employee satisfaction
-- Attrition by salary band
-- Attrition by recruitment source
-- Attrition by manager
-- Attrition by engagement level
+- **Overview** — What is happening?
+- **Workforce** — Why is it happening?
+- **Operational** — Where should the organization investigate further?
 
-Additional analysis was performed to evaluate attendance indicators such as absences and lateness.
+---
 
-The SQL outputs were then visualized in Power BI through a three-page dashboard designed to answer three key questions:
+## Dashboard Features
 
-- **Overview:** What is happening?
-- **Workforce:** Why is it happening?
-- **Operational:** Where should the organization investigate further?
+- **Synchronized department slicer** across all dashboard pages
+- Custom tooltips displaying Total Employees
+- Interactive cross-filtering between visualizations
+- Multi-page navigation
+- Dynamic KPI calculations using DAX
 
 ---
 
 ## Key Insights
 
-### 1. Attrition Is Primarily an Early Employee Lifecycle Challenge
+### 1. Attrition Is Concentrated During the Early Employee Lifecycle
 
-Employees with less than one year of tenure experienced an attrition rate of **90.0%**, compared to **21.1%** among employees with more than five years of service.
+Employees with less than one year of tenure experienced an attrition rate of 90.0% (9 out of 10 employees). Attrition remained elevated at 63.0% among employees with one to three years of service (34 out of 54 employees), compared to 21.1% among employees with more than five years of tenure (26 out of 123 employees).
 
-This represents the strongest relationship observed in the analysis and suggests that turnover risk is heavily concentrated during the early stages of employment. Rather than indicating a general retention problem across the workforce, the findings point to onboarding quality, expectation alignment, manager integration, and early employee experience as potential areas for further investigation.
+The findings suggest that turnover risk is concentrated during the first years of employment rather than being limited to initial onboarding.
 
-*Business implication: The organization may be losing employees before realizing the full return on recruitment, onboarding, and training investments.*
+**Business implication:** The organization may be losing employees before realizing the full return on recruitment, onboarding, and training investments.
 
 ---
 
 ### 2. Recruitment Outcomes Should Be Evaluated Beyond Hiring Volume
 
-Attrition rates varied significantly across recruitment sources, ranging from **7.7%** for Website hires to **61.2%** for Google Search hires.
+Attrition rates varied significantly across recruitment sources, ranging from 7.7% for Website hires to 61.2% for Google Search hires.
 
-However, additional analysis suggests that recruitment channels may be associated with different workforce segments and job types. For example, almost **88% of employees hired through Google Search were Production Technicians** — a workforce segment that has historically experienced higher turnover than many other employee groups.
+At first glance, Google Search appeared to be the least effective recruitment source. However, additional analysis revealed that 87.8% of employees hired through Google Search were Production Technicians. This suggests that the observed attrition is at least partially influenced by workforce composition rather than recruitment source effectiveness alone.
 
-This finding highlights the importance of distinguishing recruitment-source effects from workforce composition effects before drawing conclusions about channel performance.
-
-*Business implication: Recruitment effectiveness should be measured using quality-of-hire and retention outcomes, not hiring volume alone.*
+**Business implication:** Recruitment effectiveness should be measured using quality-of-hire and retention outcomes, not hiring volume alone.
 
 ---
 
-### 3. Attrition Risk Is Concentrated in Specific Workforce Segments
+### 3. Attrition Risk Is Concentrated Within Specific Workforce Segments
 
-Attrition was not evenly distributed across the organization.
+The Production department demonstrated the highest attrition rate among large workforce groups, reaching 39.7% across 209 employees. Although Software Engineering also showed elevated attrition (36.4%), the department consisted of only 11 employees, and the result should therefore be interpreted with caution.
 
-**Production** and **Software Engineering** demonstrated the highest attrition rates among all departments, suggesting that turnover challenges may be concentrated within specific workforce segments rather than affecting the organization uniformly.
-
-Differences were also observed across positions and managerial teams, indicating that workforce stability may be influenced by local operational conditions, workforce composition, management practices, or team-level factors.
-
-*Business implication: Company-wide retention initiatives may be less effective than targeted interventions focused on high-risk employee groups.*
+**Business implication:** Company-wide retention initiatives may be less effective than targeted interventions focused on high-risk workforce segments.
 
 ---
 
@@ -109,11 +96,7 @@ Differences were also observed across positions and managerial teams, indicating
 
 Lower-paid employee groups generally demonstrated higher attrition rates than higher-paid employee groups.
 
-However, the relationship was less pronounced than the differences observed across tenure groups and may partially reflect differences in role type, seniority level, and workforce composition.
-
-The findings suggest that compensation contributes to retention outcomes but is unlikely to fully explain employee turnover patterns on its own.
-
-*Business implication: Compensation should be evaluated as part of a broader retention strategy rather than as a standalone solution.*
+**Business implication:** Compensation should be evaluated as part of a broader retention strategy rather than as a standalone solution.
 
 ---
 
@@ -121,82 +104,57 @@ The findings suggest that compensation contributes to retention outcomes but is 
 
 Employees who left the organization demonstrated higher levels of lateness than active employees.
 
-While attendance metrics should not be interpreted as a direct cause of turnover, they may serve as early indicators of disengagement and potential retention risk.
-
-The findings suggest that behavioral patterns can provide valuable signals before attrition actually occurs.
-
-*Business implication: Workforce monitoring should focus not only on outcomes but also on leading indicators of employee disengagement.*
+**Business implication:** Workforce monitoring should focus not only on outcomes but also on leading indicators of employee disengagement.
 
 ---
 
 ## Business Interpretation
 
-The analysis suggests that employee turnover should be viewed primarily as a workforce lifecycle challenge rather than a compensation challenge alone.
+The analysis suggests that employee turnover should be viewed primarily as an early employee lifecycle challenge rather than a compensation challenge alone.
 
-The strongest attrition patterns were observed during the first year of employment, indicating that early employee experience may play a critical role in long-term retention outcomes. Employees appear to be at greatest risk before becoming fully integrated into the organization and before the company realizes the full value of its hiring and onboarding investments.
+The strongest attrition patterns were observed during the first three years of employment. The findings also indicate that retention challenges are not distributed evenly across the organization and may reflect a combination of workforce composition, role characteristics, management practices, employee experience, and organizational factors.
 
-The findings also suggest that workforce stability varies across recruitment channels, departments, positions, and managerial teams. This indicates that retention challenges are unlikely to stem from a single root cause and may instead reflect a combination of workforce composition, role characteristics, management practices, and employee experience factors.
+The recruitment-source analysis provides an important example of why HR analytics should move beyond surface-level interpretation. What initially appeared to be a recruitment-channel problem was, after additional investigation, largely associated with a specific workforce segment.
 
-One example is the relationship between recruitment source and attrition. Initial results suggested that Google Search hires experienced substantially higher turnover. However, further analysis showed that the majority of these hires belonged to a single workforce segment (Production Technicians), highlighting the importance of considering workforce composition before attributing outcomes to a recruitment channel itself.
-
-Importantly, several observed relationships may be influenced by workforce composition effects. Similar considerations may apply to department, salary, and manager-level findings.
-
-Overall, the results indicate that employee turnover is best understood as a multifactor workforce issue requiring targeted analysis and intervention rather than a single organization-wide solution.
+Overall, the results suggest that employee turnover is best understood as a multifactor workforce issue requiring targeted analysis and intervention rather than a single organization-wide solution.
 
 ---
 
 ## Recommendations
 
-### 1. Review the First-Year Employee Experience
+1. **Review the First Three Years of the Employee Experience**  
+   Conduct a structured review of recruitment, onboarding, probation, role development, and manager integration processes.
 
-Conduct a structured analysis of the employee journey during the first year of employment, including recruitment, onboarding, probation, and manager integration stages.
+2. **Introduce Quality-of-Hire Metrics**  
+   Evaluate recruitment channels using hiring volume, retention outcomes, and employee performance measures.
 
-The objective should be to identify where turnover risk is highest and which experiences contribute most to early employee exits.
+3. **Prioritize High-Risk Workforce Segments**  
+   Focus retention analysis and intervention efforts on workforce groups demonstrating elevated attrition levels, particularly within Production and other operational roles.
 
----
+4. **Investigate Workforce Composition Drivers**  
+   Conduct additional analysis within departments and job families to distinguish correlation from underlying causes.
 
-### 2. Introduce Quality-of-Hire Metrics
-
-Evaluate recruitment channels using a combination of hiring volume, retention outcomes, and employee performance measures.
-
-Recruitment effectiveness should be assessed based on long-term workforce outcomes rather than acquisition metrics alone.
-
----
-
-### 3. Focus on High-Risk Workforce Segments
-
-Prioritize retention analysis and intervention efforts within departments, positions, and teams demonstrating elevated attrition levels.
-
-Targeted actions are likely to be more effective than broad organization-wide retention initiatives.
+5. **Monitor Leading Indicators of Turnover Risk**  
+   Track attendance, engagement, satisfaction, and other workforce indicators that may signal emerging retention challenges.
 
 ---
-
-### 4. Investigate Workforce Composition Drivers
-
-Conduct additional analysis within individual job families and departments to determine whether observed attrition patterns are driven by recruitment channels, role characteristics, management practices, compensation structures, or other workforce factors.
-
-This will help distinguish correlation from underlying causes.
-
----
-
-### 5. Monitor Leading Indicators of Turnover Risk
-
-Regularly track attendance, engagement, satisfaction, and other workforce indicators that may signal emerging retention challenges.
-
-Early identification of at-risk employee groups can support proactive intervention before turnover occurs.
-
 
 ## Dashboard Preview
 
-### Overview
+The dashboard is structured around three business questions commonly used in workforce analytics and HR decision-making.
+
+### Overview — What is happening?
+Provides a high-level view of workforce attrition, including overall attrition rate, department-level turnover patterns, and key workforce metrics.
 
 <img src="dashboard_overview.png" width="1000">
 
-### Workforce
+### Workforce — Why is it happening?
+Explores the relationship between attrition and employee characteristics such as tenure, engagement, satisfaction, performance, compensation, and recruitment source.
 
 <img src="dashboard_workforce.png" width="1000">
 
-### Operational
+### Operational — Where should the organization investigate further?
+Focuses on manager-level turnover patterns, attendance indicators, and workforce segments requiring additional review.
 
 <img src="dashboard_operational.png" width="1000">
 
@@ -213,7 +171,6 @@ Early identification of at-risk employee groups can support proactive interventi
 ## Skills Demonstrated
 
 ### HR Analytics
-
 - Employee attrition analysis
 - Retention metrics
 - Workforce analytics
@@ -221,46 +178,40 @@ Early identification of at-risk employee groups can support proactive interventi
 - Evidence-based HR decision support
 
 ### SQL
-
 - Aggregation and grouping (`GROUP BY`)
 - Conditional logic (`CASE WHEN`)
 - Date calculations (`DATEDIFF`)
 - Data transformation
-- HR metric calculation
 - Workforce segmentation and analysis
-- Business-focused analytical queries
 
 ### Power BI
-
 - Interactive dashboard development
 - KPI visualization
 - Multi-page report design
+- Report navigation
+- Slicers and interactive filtering
+- Custom tooltips
 - Data storytelling
 
 ### DAX
-
 - Attrition rate calculations
 - KPI measures
 - Custom metrics
 
 ### Power Query
-
 - Data preparation
 - Data transformation
-- Data type management
 
 ### Business Analytics
-
 - Translating business questions into analytical frameworks
-- Identifying workforce trends and retention risks
-- Developing data-driven recommendations
+- Workforce segmentation and retention analysis
+- Identifying workforce trends and attrition drivers
+- Developing data-driven HR recommendations
 
 ---
 
 ## Conclusion
 
-This project demonstrates how HR data can be used to identify employee retention risks and support workforce decision-making.
+This project demonstrates how HR data can be used to identify workforce retention risks and support evidence-based decision-making.
 
-The analysis found that attrition is primarily concentrated among employees with short tenure, while recruitment source, department, compensation, engagement, and team-level characteristics appear to influence long-term retention outcomes.
-
-By combining SQL, Power BI, DAX, and HR domain knowledge, the project illustrates a complete HR Analytics workflow—from business questions and data preparation to insight generation and actionable recommendations.
+By combining SQL, Power BI, DAX, and HR analytics principles, the project demonstrates a complete analytical workflow—from business questions and data preparation to insight generation, interpretation, and actionable workforce recommendations.
