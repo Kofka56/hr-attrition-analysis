@@ -71,86 +71,119 @@ The SQL outputs were then visualized in Power BI through a three-page dashboard 
 
 ## Key Insights
 
-### 1. Early Tenure Is the Strongest Attrition Risk Factor
+### 1. Attrition Is Primarily an Early Employee Lifecycle Challenge
 
-Employees with less than one year of tenure demonstrated an attrition rate of **90.0%**, compared to **21.1%** among employees with more than five years of tenure.
+Employees with less than one year of tenure experienced an attrition rate of **90.0%**, compared to **21.1%** among employees with more than five years of service.
 
-This represents the strongest relationship observed in the analysis and suggests that turnover risk is heavily concentrated during the early stages of employment.
+This represents the strongest relationship observed in the analysis and suggests that turnover risk is heavily concentrated during the early stages of employment. Rather than indicating a general retention problem across the workforce, the findings point to onboarding quality, expectation alignment, manager integration, and early employee experience as potential areas for further investigation.
 
-### 2. Recruitment Source Quality Appears Strongly Associated With Retention
+*Business implication: The organization may be losing employees before realizing the full return on recruitment, onboarding, and training investments.*
 
-Attrition rates varied significantly across recruitment channels, ranging from **7.7%** for Website hires to **61.2%** for Google Search hires.
+---
 
-The findings suggest that recruitment effectiveness should be evaluated not only by hiring volume but also by long-term retention outcomes.
+### 2. Recruitment Outcomes Should Be Evaluated Beyond Hiring Volume
 
-### 3. Attrition Is Concentrated in Specific Departments
+Attrition rates varied significantly across recruitment sources, ranging from **7.7%** for Website hires to **61.2%** for Google Search hires.
 
-Production and Software Engineering reported the highest attrition rates among departments.
+However, additional analysis suggests that recruitment channels may be associated with different workforce segments and job types. For example, almost **88% of employees hired through Google Search were Production Technicians** — a workforce segment that has historically experienced higher turnover than many other employee groups.
 
-This indicates that turnover challenges are not distributed evenly across the organization and may require targeted departmental investigation.
+This finding highlights the importance of distinguishing recruitment-source effects from workforce composition effects before drawing conclusions about channel performance.
 
-### 4. Team-Level Differences Suggest a Potential Management Effect
+*Business implication: Recruitment effectiveness should be measured using quality-of-hire and retention outcomes, not hiring volume alone.*
 
-Attrition rates varied substantially across managers.
+---
 
-While the analysis does not establish causation, the results indicate meaningful differences in retention outcomes between teams and highlight areas for further review.
+### 3. Attrition Risk Is Concentrated in Specific Workforce Segments
 
-### 5. Compensation May Influence Retention, but the Relationship Is Weaker Than Tenure
+Attrition was not evenly distributed across the organization.
 
-Lower salary groups generally experienced higher attrition than higher-paid employee groups.
+**Production** and **Software Engineering** demonstrated the highest attrition rates among all departments, suggesting that turnover challenges may be concentrated within specific workforce segments rather than affecting the organization uniformly.
 
-Although compensation appears associated with retention outcomes, its impact is less pronounced than employee tenure.
+Differences were also observed across positions and managerial teams, indicating that workforce stability may be influenced by local operational conditions, workforce composition, management practices, or team-level factors.
 
-### 6. Attendance Indicators May Serve as Early Warning Signals
+*Business implication: Company-wide retention initiatives may be less effective than targeted interventions focused on high-risk employee groups.*
 
-Terminated employees demonstrated higher levels of lateness than active employees.
+---
 
-This suggests that attendance-related metrics may provide useful signals for identifying potential retention risks.
+### 4. Compensation Appears Related to Retention, but Is Unlikely to Be the Primary Driver
+
+Lower-paid employee groups generally demonstrated higher attrition rates than higher-paid employee groups.
+
+However, the relationship was less pronounced than the differences observed across tenure groups and may partially reflect differences in role type, seniority level, and workforce composition.
+
+The findings suggest that compensation contributes to retention outcomes but is unlikely to fully explain employee turnover patterns on its own.
+
+*Business implication: Compensation should be evaluated as part of a broader retention strategy rather than as a standalone solution.*
+
+---
+
+### 5. Behavioral Indicators May Help Identify Emerging Retention Risk
+
+Employees who left the organization demonstrated higher levels of lateness than active employees.
+
+While attendance metrics should not be interpreted as a direct cause of turnover, they may serve as early indicators of disengagement and potential retention risk.
+
+The findings suggest that behavioral patterns can provide valuable signals before attrition actually occurs.
+
+*Business implication: Workforce monitoring should focus not only on outcomes but also on leading indicators of employee disengagement.*
 
 ---
 
 ## Business Interpretation
 
-### Workforce Stability Challenges Occur Primarily During the First Years of Employment
+The analysis suggests that employee turnover should be viewed primarily as a workforce lifecycle challenge rather than a compensation challenge alone.
 
-The analysis suggests that retention risks are concentrated in the early stages of the employee lifecycle, indicating that onboarding, role expectations, and early employee experience may require additional attention.
+The strongest attrition patterns were observed during the first year of employment, indicating that early employee experience may play a critical role in long-term retention outcomes. Employees appear to be at greatest risk before becoming fully integrated into the organization and before the company realizes the full value of its hiring and onboarding investments.
 
-### Hiring Effectiveness Should Be Evaluated Beyond Recruitment Volume
+The findings also suggest that workforce stability varies across recruitment channels, departments, positions, and managerial teams. This indicates that retention challenges are unlikely to stem from a single root cause and may instead reflect a combination of workforce composition, role characteristics, management practices, and employee experience factors.
 
-Large differences between recruitment sources suggest that hiring success should be measured not only by candidate acquisition but also by long-term retention outcomes.
+One example is the relationship between recruitment source and attrition. Initial results suggested that Google Search hires experienced substantially higher turnover. However, further analysis showed that the majority of these hires belonged to a single workforce segment (Production Technicians), highlighting the importance of considering workforce composition before attributing outcomes to a recruitment channel itself.
 
-### Attrition Is Unlikely to Be Driven by a Single Factor
+Importantly, several observed relationships may be influenced by workforce composition effects. Similar considerations may apply to department, salary, and manager-level findings.
 
-The results indicate that employee turnover is associated with a combination of tenure, department, compensation, engagement, and team-level characteristics rather than a single underlying cause.
-
-### Retention Outcomes Differ Across Organizational Units
-
-Variations across departments, positions, and managers suggest that workforce challenges may require localized interventions rather than organization-wide solutions.
+Overall, the results indicate that employee turnover is best understood as a multifactor workforce issue requiring targeted analysis and intervention rather than a single organization-wide solution.
 
 ---
 
 ## Recommendations
 
-### Priority 1: Strengthen First-Year Retention Programs
+### 1. Review the First-Year Employee Experience
 
-Given the exceptionally high attrition rate among employees with less than one year of tenure, organizations should review onboarding practices, probation-period support, manager check-ins, and role expectation alignment.
+Conduct a structured analysis of the employee journey during the first year of employment, including recruitment, onboarding, probation, and manager integration stages.
 
-### Priority 2: Introduce Retention-Based Recruitment Metrics
+The objective should be to identify where turnover risk is highest and which experiences contribute most to early employee exits.
 
-Evaluate recruitment channels not only by hiring volume but also by employee retention outcomes after 6–12 months.
+---
 
-### Priority 3: Conduct Targeted Department-Level Retention Reviews
+### 2. Introduce Quality-of-Hire Metrics
 
-Focus on departments with elevated attrition rates to identify operational, workload, compensation, career development, or employee experience issues.
+Evaluate recruitment channels using a combination of hiring volume, retention outcomes, and employee performance measures.
 
-### Priority 4: Investigate Team-Level Retention Differences
+Recruitment effectiveness should be assessed based on long-term workforce outcomes rather than acquisition metrics alone.
 
-Review employee feedback, engagement data, and management practices in teams with unusually high turnover.
+---
 
-### Priority 5: Monitor Leading Indicators of Disengagement
+### 3. Focus on High-Risk Workforce Segments
 
-Track attendance, lateness, engagement, and satisfaction metrics as potential indicators of future turnover risk.
+Prioritize retention analysis and intervention efforts within departments, positions, and teams demonstrating elevated attrition levels.
 
+Targeted actions are likely to be more effective than broad organization-wide retention initiatives.
+
+---
+
+### 4. Investigate Workforce Composition Drivers
+
+Conduct additional analysis within individual job families and departments to determine whether observed attrition patterns are driven by recruitment channels, role characteristics, management practices, compensation structures, or other workforce factors.
+
+This will help distinguish correlation from underlying causes.
+
+---
+
+### 5. Monitor Leading Indicators of Turnover Risk
+
+Regularly track attendance, engagement, satisfaction, and other workforce indicators that may signal emerging retention challenges.
+
+Early identification of at-risk employee groups can support proactive intervention before turnover occurs.
 ---
 
 ## Dashboard Preview
