@@ -39,39 +39,36 @@ ORDER BY attrition_rate_pct DESC;
 -- Business Question 4:
 -- How does employee tenure relate to attrition?
 
-SELECT
-    CASE
-        WHEN tenure_years < 1 THEN '< 1 year'
-        WHEN tenure_years < 3 THEN '1–3 years'
-        WHEN tenure_years < 5 THEN '3–5 years'
-        ELSE '5+ years'
-    END AS tenure_group,
-    COUNT(*) AS total_employees,
-    SUM(termd) AS terminated_employees,
-    ROUND(SUM(termd) * 100.0 / COUNT(*), 2) AS attrition_rate_pct
-FROM (
-    SELECT
-        termd,
-        ROUND(
-            DATEDIFF(
-                CASE
-                    WHEN termd = 1
-                        THEN STR_TO_DATE(dateoftermination, '%c/%e/%Y')
-                    ELSE STR_TO_DATE('2018-11-10', '%Y-%m-%d')
-                END,
-                STR_TO_DATE(dateofhire, '%c/%e/%Y')
-            ) / 365.25,
-            2
-        ) AS tenure_years
+SELECT 
+    CASE 
+        WHEN tenure_years < 1 THEN '< 1 year' 
+        WHEN tenure_years < 3 THEN '1–3 years' 
+        WHEN tenure_years < 5 THEN '3–5 years' 
+        ELSE '5+ years' 
+    END AS tenure_group, 
+    COUNT(*) AS total_employees, 
+    SUM(termd) AS terminated_employees, 
+    ROUND(SUM(termd) * 100.0 / COUNT(*), 2) AS attrition_rate_pct 
+FROM ( 
+    SELECT 
+        termd, 
+        DATEDIFF( 
+            CASE 
+                WHEN termd = 1 
+                    THEN STR_TO_DATE(dateoftermination, '%c/%e/%Y') 
+                ELSE STR_TO_DATE('2018-11-10', '%Y-%m-%d') 
+            END, 
+            STR_TO_DATE(dateofhire, '%c/%e/%Y')
+        ) / 365.25 AS tenure_years
     FROM hrdataset_v14
-) AS employee_tenure
-GROUP BY tenure_group
-ORDER BY
-    CASE tenure_group
-        WHEN '< 1 year' THEN 1
-        WHEN '1–3 years' THEN 2
-        WHEN '3–5 years' THEN 3
-        ELSE 4
+) AS employee_tenure 
+GROUP BY tenure_group 
+ORDER BY 
+    CASE tenure_group 
+        WHEN '< 1 year' THEN 1 
+        WHEN '1–3 years' THEN 2 
+        WHEN '3–5 years' THEN 3 
+        ELSE 4 
     END;
 
 -- Business Question 5:
